@@ -1,0 +1,162 @@
+<!-- 
+	MUKESH KUMAR BHANSALI
+	All Right Reserved
+-->
+
+<html>
+<head>
+	<title> SUDOKU SOLUTIONS </title>
+	
+	
+	<script type="text/javascript" src="Initialization.js"/></script>
+	<script type="text/javascript" src="Load.js"/></script>
+
+	<script type="text/javascript" src="Validation.js"></script>
+	<script type="text/javascript" src="PReview.js"></script>
+	
+	<script type="text/javascript" src="Elimination.js"></script>
+	<script type="text/javascript" src="Claim.js"></script>
+	<script type="text/javascript" src="Insertion_Sort.js"></script>
+	<script type="text/javascript" src="Group_Elimination.js"></script>
+	<script type="text/javascript" src="Solution.js"></script>
+	
+	<script type="text/javascript" src="Set_Puzzle.js"></script>
+	<script type="text/javascript" src="Default_Puzzle.js"></script>
+	
+	<script type="text/javascript" src="Hints.js"></script>
+	
+	<script type="text/javascript" src="Verification.js"></script>
+	
+	<script type="text/javascript" src="Puzzle_Generator.js"></script>
+	<script type="text/javascript" src="Puzzle_Classifier.js"></script>
+	<script type="text/javascript" src="Puzzle_Generator_Validation.js"></script>
+	
+	<script type="text/javascript" src="User_Guide.js"></script>
+	<script type="text/javascript" src="Demonstrate_Puzzle_Generations.js"></script>
+	<script type="text/javascript" src="Demostration_User_Help_Tool.js"></script>
+	
+	<script type="text/javascript" src="Stop_Watch.js"></script>
+	
+	<script type="text/javascript" src="Administrator.js"></script>
+	
+	<script>
+	
+	// Preview function
+	var Index_1;
+	var Index_2;
+	var Index_3;
+	var Index_4;
+	
+	// Load function
+	var Preview_Blank_Default;
+	var Blank_Suffix;
+	var Construction_String;
+	var Drop_Down;
+	var Next_Id;
+	
+	// Common Objects
+	var Total_Number_Of_Element;
+	var Edit_Preview_UI_Element_ID_Difference;
+	var Total_Set;
+	var Sudoku_Data;		//Data Array
+	var Sudoku_Solution;	// Solution Array
+	var Solved = false;		// Flag in Hint
+	
+	// Solution
+	var Complexity;
+	var User_Message;
+	var Default_Colour;
+	var Conflict_Colour;
+	var Colors;
+	
+	// Set_Puzzle function
+	var Set_Problem;
+	var MAX_HINTS;
+
+	//Preview
+	var Preview_Color;
+	var Steps;
+	var Total_Blank_Element;
+	
+	//Review
+	var Reviewer;
+	
+	// User_Tools
+	var User_Features;
+	
+function Experiments()
+{
+	alert("Experimenting...");
+}
+
+	</script>
+</head>
+
+<body background="BackGround.jpg" onload="Load();">
+
+<div id="Score_Board">
+	<font id="Score" color="#AA88BB" style="float:left;"></font>
+	
+	<div id="User_Puzzle_Tools" style="float:left;"> </div>
+	
+	<input type="button" value=" Restart Game " onclick="Load();" style="float:right;" />
+	
+	<div style="float: right; margin-right:20px;"> <font id="Stop_Watch" color="GREEN"> </font> </div>
+	
+</div>
+
+<br></br>
+
+<table>
+	<tr>
+		<td>
+			<div id="Construction"> </div>
+		</td>
+
+		<td>
+			<div id="Lever" style="margin-left:40px;"> </div>
+		</td>
+		
+		<td>
+			<div id="Preview" style="margin-left:40px;"> </div>
+			<div style="margin-left:40px;"> <font color="#C80000" id="Reviewers"> </font> </div>
+		</td>
+		
+		<td>
+			<div id="User_Help_Tool" style="margin-left:20px;"> </div>
+		</td>
+		
+		<td align="right">
+			<div id="Solution" style="margin-left:50px;"> </div>
+		</td>
+		
+		<td>
+			<div id="Legends" style="margin-left:50px;margin-top:70px;"></div>
+			<div id="Introduced_By" style="float:right;"></div>
+		</td>
+
+	</tr>
+</table>
+
+<div id="Property"></div>
+
+<input type="button" value=" Experiments " onclick="Admins();" style="display:none;" />
+
+<div> <font color="#C88800" id="User_Message"> </font>  </div>
+<div> <font color="#C88800" id="Greeting"> </font>  </div>
+
+<div id="User_Guide"> </div>
+
+<img src="Puzzler.js" height="45px" width="60px"/>
+
+<DIV STYLE="FLOAT:RIGHT;">
+<A HREF="http://nazariya.webs.com/"> PLAY NAV HARI </A><BR></BR>
+<A HREF="http://nazariya.webs.com/Matrices/"> MATRICER </A><BR></BR>
+<A HREF="http://nazariya.webs.com/Formulae/"> FORMULATING FORMULAE </A><BR></BR>
+<A HREF="http://nazariya.webs.com/Kavach/"> CLIENT SIDE PROTECTION </A><BR></BR>
+</div>
+
+
+</body>
+
+</html>
